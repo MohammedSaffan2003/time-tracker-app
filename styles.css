@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+nav button {
+    color: white;
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover, nav button.active {
+    background-color: #666;
+}
+
+main {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#taskList .task {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.task h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.task p {
+    margin: 5px 0;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.add-task-btn {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.add-task-btn:hover {
+    background: #0056b3;
+}
+
+/* Additional styling for spacing in analysis section */
+#analysis .bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;  /* Increased spacing */
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #ddd;
+    height: 24px;
+    color: white;
+}
+
+
+#analysis .bar div {
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
