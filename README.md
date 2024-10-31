@@ -29,7 +29,7 @@ A mobile-friendly, web-based time-tracking application that helps you manage and
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/timetracker-webapp.git
+   git clone https://github.com/MohammedSaffan2003/time-tracker-app.git
    ```
 2. **Open in Browser**
    - Navigate to the project folder and open `index.html` in your preferred browser.
